@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "randomstring": "^1.2.2",
     "simple-random-string-creator": "^1.1.1"
   }
 }

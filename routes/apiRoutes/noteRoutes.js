@@ -1,6 +1,10 @@
 const router = require('express').Router();
 const notes = require('../../db/db.json');
 const fs = require ('fs');
+const path = require('path');
+// to generate random id for each note
+const randomstring = require('randomstring');
+
 
 
 router.get('/notes', (req, res) => {
@@ -13,13 +17,19 @@ router.post('/notes', (req, res) => {
     console.log(noteItem)
     notes.push(noteItem);
 
-    // write note to db file
     fs.writeFileSync(
-    path.join(__dirname, '../db/db.json'),
+    path.join(__dirname, '../../db/db.json'),
     JSON.stringify(notes, null, 2)
   );
 
     res.json(noteItem);
   });
+
+  router.post('/notes', (req, res) => {
+      noteItem.id = randomstring.generate();
+      console.log(noteItem.id);
+      res.json(noteItem.id);
+  });
+
 
 module.exports = router;

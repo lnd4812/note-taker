@@ -1,6 +1,10 @@
 [
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
+  {
+    "title": "Test Title",
+    "text": "Test text"
+  },
+  {
+    "title": "what happens next",
+    "text": "time to find out"
+  }
 ]
