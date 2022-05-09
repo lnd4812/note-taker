@@ -1,5 +1,3 @@
-// to generate random id for each note
-
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -44,7 +42,7 @@ const saveNote = (note) =>
     body: JSON.stringify(note),
   });
 
-const deleteNote = (id) =>
+  const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
