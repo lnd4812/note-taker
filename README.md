@@ -29,7 +29,7 @@ Project provides user with an online platform, accessible from any browser and/o
 
 ![page on opening](public/assets/images/module-11-assignment-mock-up.png)
 
-![selected note](public/assets/images/module-11-mock-up-pg-2.png) being shown in the Note input section.  
+![selected note](public/assets/images/module-11-mock-up-pg-2.png)
 
 ## License
 
