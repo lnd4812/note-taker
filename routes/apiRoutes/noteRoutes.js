@@ -11,11 +11,9 @@ router.get('/notes', (req, res) => {
 
 router.post('/notes', (req, res) => {
     let noteItem = req.body;
-    console.log(noteItem)
-
     // assign 10 character random id to note
     noteItem.id = randomstring.generate(10);
-    console.log(noteItem.id);
+    console.log(noteItem);
     notes.push(noteItem);
 
     fs.writeFileSync(
@@ -27,17 +25,17 @@ router.post('/notes', (req, res) => {
   });
   
 
-// router.get('/notes', (req, res) => {
+router.get('/notes', (req, res) => {
     
-//     res.json(results);
-// });
+    res.json(results);
+});
 
-// router.delete('/notes', (req, res) => {
-//     let goNote = notes[id];
-//         if (req.query) {
-//             goNote = deleteNote(req.query, goNote);
-//         }
-//     res.json(goNote)    
-// });
+router.delete('/notes', (req, res) => {
+    let goNote = notes[id];
+        if (req.query) {
+            goNote = deleteNote(req.query, goNote);
+        }
+    res.json(goNote)    
+});
 
 module.exports = router;

@@ -163,16 +163,16 @@ const renderNoteList = async (notes) => {
 
   jsonNotes.forEach((note) => {
     const li = createLi(note.title);
-     li.dataset.note = JSON.stringify(note);
+    li.dataset.note = JSON.stringify(note);
 
     noteListItems.push(li);
-
-    
+          
   });
 
   if (window.location.pathname === '/notes') {
     noteListItems.forEach((note) => noteList[0].append(note));
   }
+  
 };
 
 // Gets notes from the db and renders them to the sidebar
@@ -183,6 +183,7 @@ if (window.location.pathname === '/notes') {
   newNoteBtn.addEventListener('click', handleNewNoteView);
   noteTitle.addEventListener('keyup', handleRenderSaveBtn);
   noteText.addEventListener('keyup', handleRenderSaveBtn);
+
 }
 
 getAndRenderNotes();
