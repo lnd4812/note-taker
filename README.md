@@ -8,7 +8,7 @@ Note-Taker-On-The-Go
 
 ## Description
 
-Create a browser based note saver and/or planner program using node.js and express.js to connect front-end and back-end coding.  The program enables a user to enter a Note title and text at the front end where, when the save icon is clicked, employs a POST Request to save the note, with a random genrated id, to an array of notes saved in a json file on the server.
+Create a browser based note saver and/or planner program using node.js and express.js to connect front-end and back-end coding.  The program enables a user to enter a Note title and text at the front end where, when the save icon is clicked, employs a POST Request to save the note, with a random generated id, to an array of notes saved in a json file on the server.
 
 ## Table of Contents
 
@@ -21,11 +21,15 @@ Create a browser based note saver and/or planner program using node.js and expre
 
 ## Installation
 
-type in "npm start" to run a version at [localhost:3001](http://localhost:3001) or launch on [Heroku](https://note-taker-at-work.herokuapp.com/).
+Launch on [Heroku](https://note-taker-at-work.herokuapp.com/).
 
 ## Usage
 
-Project provides user with an online platform, accessible from any browser and/or device to save notes, appointments, reminders, etc. on the go rather than being tied to a physical note pad). A sample of how the project should appear if functioning properly was included in the [Module 11 Challenge Assignment outline](https://courses.bootcampspot.com/courses/1181/assignments/23354?module_item_id=463836), showing both the page as it appears when accessed, a list of saved notes on the left and a text area for entering notes on the ![right](public/assets/images/module-11-assignment-mock-up.png) and a version of it highlighting a ![selected note](public/assets/images/module-11-mock-up-pg-2.png) being shown in the Note input section.  
+Project provides user with an online platform, accessible from any browser and/or device to save notes, appointments, reminders, etc. on the go rather than being tied to a physical note pad). A sample of how the project should appear if functioning properly was included in the [Module 11 Challenge Assignment outline](https://courses.bootcampspot.com/courses/1181/assignments/23354?module_item_id=463836), showing both the page as it appears when accessed, a list of saved notes on the left and a text area for entering notes on the right and a version of it highlighting a selected note.
+
+![page on opening](public/assets/images/module-11-assignment-mock-up.png)
+
+![selected note](public/assets/images/module-11-mock-up-pg-2.png) being shown in the Note input section.  
 
 ## License
 
@@ -33,7 +37,7 @@ This application is covered under the MIT license.  [MIT license link](https://c
 
 ## Contributing
 
-Not at this time.  However, suggestions and/or feedback for how to improve functioning or add future enhancements detailed below would be more than welcome.
+Suggestions and/or feedback for how to improve functioning (where needed) or add future enhancements detailed below would be more than welcome.
 
 ## Testing
 
